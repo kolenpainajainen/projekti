@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muay Thai – Kahdeksan raajan taito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <span class="logo">MUAY THAI</span>
+      <nav>
+        <a href="#etusivu">Etusivu</a>
+        <a href="#tietoa">Tietoa minusta</a>
+        <a href="#yhteys">Ota yhteyttä</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Valikko">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#etusivu" onclick="toggleMenu()">Etusivu</a>
+      <a href="#tietoa" onclick="toggleMenu()">Tietoa minusta</a>
+      <a href="#yhteys" onclick="toggleMenu()">Ota yhteyttä</a>
+    </div>
+  </header>
+
+  <section id="etusivu" class="hero">
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <p class="hero-label">Thaimaan kansallislaji</p>
+        <h1>Kahdeksan<br><span>raajan</span><br>taito</h1>
+        <p class="hero-sub">Muay Thai on enemmän kuin kamppailulaji — se on elämäntapa, kurinalaisuus ja taito, jota on hiottu vuosisatoja.</p>
+        <a href="#tietoa" class="btn">Lue lisää &rarr;</a>
+      </div>
+      <div class="hero-aside" aria-hidden="true">
+        <span class="hero-thai">วิชา</span>
+        <span class="hero-year">Est. 1238</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="tietoa" class="section">
+    <div class="container">
+      <div class="section-label">Tietoa minusta</div>
+      <h2>Harrastaja &amp; intoilija</h2>
+      <div class="bio-grid">
+        <div class="bio-text">
+          <p>Olen harrastanut Muay Thaita kolme vuotta ja se on muuttanut elämääni merkittävästi. Laji opettaa kurinalaisuutta, itseluottamusta ja kunnioitusta — ominaisuuksia, jotka heijastuvat myös arkielämään salin ulkopuolella.</p>
+          <p>Harjoittelen paikallisessa salissa neljästi viikossa ja olen osallistunut amatööritasoisiin kilpailuihin. Tavoitteenani on kehittyä jatkuvasti ja jakaa intoani lajia kohtaan muille.</p>
+          <ul class="skills-list">
+            <li>&#x1F94A; Muay Thai – 3 vuotta</li>
+            <li>&#x1F3C3; Juoksu &amp; konditionointi</li>
+            <li>&#x1F9D8; Venyttely &amp; palautuminen</li>
+          </ul>
+        </div>
+        <div class="bio-stats">
+          <div class="stat">
+            <span class="num">3</span>
+            <span class="lab">Vuotta harrastusta</span>
+          </div>
+          <div class="stat">
+            <span class="num">4&#xD7;</span>
+            <span class="lab">Viikossa salilla</span>
+          </div>
+          <div class="stat">
+            <span class="num">12</span>
+            <span class="lab">Ottelua</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <div class="section-label light">Tekniikat</div>
+      <h2>Kahdeksan asetta</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-num">01</div>
+          <h3>Nyrkki</h3>
+          <p>Jab, cross, koukku ja uppercut — nopeus ja rytmi ovat perusta kaikelle muulle.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">02</div>
+          <h3>Potku</h3>
+          <p>Tehokas kiertoliike lantiosta tuottaa sääripotkun murskavan voimakkuuden.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">03</div>
+          <h3>Kyynärpää</h3>
+          <p>Lähitaistelun vaarallisimpia aseita — tarkka, nopea ja erittäin tehokas.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">04</div>
+          <h3>Polvi</h3>
+          <p>Klinch-tilanteessa erityisen tehokas — klassinen ja ikoninen Muay Thai -ase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mid">
+    <div class="container">
+      <div class="section-label">Vertailu</div>
+      <h2>Muay Thai vs. muut lajit</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Ominaisuus</th>
+              <th>Muay Thai</th>
+              <th>Nyrkkeily</th>
+              <th>Karate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aseet</td>
+              <td><span class="highlight">8</span> — nyrkit, jalat, kyynärpäät, polvet</td>
+              <td>2 (nyrkit)</td>
+              <td>4–6</td>
+            </tr>
+            <tr>
+              <td>Klinch-taistelu</td>
+              <td><span class="highlight">Kyll&#xE4;</span></td>
+              <td>Ei</td>
+              <td>Ei</td>
+            </tr>
+            <tr>
+              <td>Kilpailuformaatti</td>
+              <td>Rinki, 5 er&#xE4;&#xE4;</td>
+              <td>Rinki, 3–12 er&#xE4;&#xE4;</td>
+              <td>Pisteet / KO</td>
+            </tr>
+            <tr>
+              <td>Alkuper&#xE4;</td>
+              <td><span class="highlight">Thaimaa</span></td>
+              <td>Kreikka / UK</td>
+              <td>Japani / Okinawa</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <div class="section-label light">Media</div>
+      <h2>Katso videolta</h2>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/F4JEIf_-qeI"
+          title="Muay Thai esittely"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="video-caption">Klassinen Muay Thai -harjoitusvideo — tekniikat ja perusliikkeet.</p>
+    </div>
+  </section>
+
+  <section id="yhteys" class="section">
+    <div class="container">
+      <div class="section-label">Ota yhteyttä</div>
+      <h2>Kirjoita minulle</h2>
+      <form action="mailto:sinun@email.fi" method="post" enctype="text/plain" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nimi">Nimi</label>
+            <input type="text" id="nimi" name="nimi" placeholder="Etunimi Sukunimi" required />
+          </div>
+          <div class="form-group">
+            <label for="email">S&#xE4;hk&#xF6;posti</label>
+            <input type="email" id="email" name="email" placeholder="sin&#xE4;@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="viesti">Viesti</label>
+          <textarea id="viesti" name="viesti" rows="5" placeholder="Kirjoita viestisi t&#xE4;h&#xE4;n..." required></textarea>
+        </div>
+        <button type="submit" class="btn">L&#xE4;het&#xE4; viesti &rarr;</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">MUAY THAI</span>
+      <nav class="footer-links">
+        <a href="#etusivu">Etusivu</a>
+        <a href="#tietoa">Tietoa</a>
+        <a href="#yhteys">Yhteystiedot</a>
+      </nav>
+      <span class="footer-copy">&#xA9; 2026</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
